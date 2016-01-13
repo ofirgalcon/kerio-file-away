@@ -12,9 +12,6 @@ if [ "$1" == "" ] ; then
 	exit 1
 fi
 
-echo "IMPORTANT: When the script completes, go to Kerio admin and"
-echo "re-index the user mailbox"
-echo ""
 
 MAILBOX="$1"
 curYear=`date +"%Y"`
@@ -46,4 +43,5 @@ done
 
 echo ""
 echo "IMPORTANT: When the script completes, go to Kerio admin and"
-echo "re-index the user mailbox"
+echo "RESTART the Kerio Connect server, a re-index of the user mailbox"
+echo "will not find all the new folders"
