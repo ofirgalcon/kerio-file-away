@@ -4,7 +4,8 @@ if [ `whoami` != "root" ] ; then
 	echo "Script failed. Enter sudo -s and try again"
 	exit 1
 fi
-if [ "$1" == "" ] ; then
+
+if [ "$1" == "" ] || [ "$1" == "help" ] ; then
 	echo "Pass full path of kerio domain, for example:"
 	echo "/usr/local/kerio/mailserver/store/mail/domain.com"
 	echo "This script will scan a domain and list "
