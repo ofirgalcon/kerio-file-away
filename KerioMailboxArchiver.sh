@@ -43,5 +43,5 @@ done
 
 echo ""
 echo "IMPORTANT: When the script completes, go to Kerio admin and"
-echo "RESTART the Kerio Connect server, a re-index of the user mailbox"
-echo "will not find all the new folders"
+echo "RESTART the Kerio Connect server, unfortunately a live re-index of the "
+echo "user mailbox will not find all the new folders"
