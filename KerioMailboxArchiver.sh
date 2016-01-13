@@ -5,13 +5,14 @@ if [ `whoami` != "root" ] ; then
 	exit 1
 fi
 
-if [ "$1" == "" ] ; then
+if [ "$1" == "" ] || [ "$1" == "help" ] ; then
 	echo "Pass full path of mailbox, for example:"
 	echo "/usr/local/kerio/mailserver/store/mail/domain.com/user/INBOX"
 	echo "This script will file the messages into sub-folders by years"
 	exit 1
 fi
 
+echo "This script will file the messages into sub-folders by years"
 
 MAILBOX="$1"
 curYear=`date +"%Y"`
