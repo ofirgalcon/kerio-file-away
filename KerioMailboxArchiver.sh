@@ -1,5 +1,5 @@
 #!/bin/sh
-# KerioMailboxArchiver.sh v1.0.0
+# KerioMailboxArchiver.sh v1.0.0 © Ofir Gal 2016
 if [ `whoami` != "root" ] ; then 
 	echo "Script failed. Enter sudo -s and try again"
 	exit 1
